@@ -19,5 +19,13 @@ An address that gets approved by the token owner. Spenders are approved to spend
 
 ## Token Standard
 #### ERC-20
-**Author :** Fabian Vogelsteller, Vitalik Buterin
-**Functionality :** The following standard allows for the implementation of a standard API for tokens within smart contracts. This standard provides basic functionality to transfer tokens and allow tokens to be approved so they can be spent by another on-chain third party. A standard interface allows any tokens on Ethereum to be re-used by other applications: from wallets to decentralized exchanges.
+- **Author :** Fabian Vogelsteller, Vitalik Buterin
+- **Functionality :** The following standard allows for the implementation of a standard API for tokens within smart contracts. This standard provides basic functionality to transfer tokens and allow tokens to be approved so they can be spent by another on-chain third party. A standard interface allows any tokens on Ethereum to be re-used by other applications: from wallets to decentralized exchanges.
+- It is a fungible token.
+#### ERC-777
+- **Author :** 	Jacques Dafflon, Jordi Baylina, Thomas Shababi
+- **Functionality :** It defines advanced features to interact with tokens. Namely, operators to send tokens on behalf of another address—contract or regular account—and send/receive hooks to offer token holders more control over their tokens.
+
+It takes advantage of ERC-1820 to find out whether and where to notify contracts and regular addresses when they receive tokens as well as to allow compatibility with already-deployed contracts.
+
+## More details in https://eips.ethereum.org/EIPS
